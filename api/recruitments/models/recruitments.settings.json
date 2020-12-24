@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recruitments",
+  "info": {
+    "name": "recruitments"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "job_tittle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

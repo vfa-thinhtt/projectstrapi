@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/strapi-news",
+      "handler": "strapi-news.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/strapi-news/count",
+      "handler": "strapi-news.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/strapi-news/:id",
+      "handler": "strapi-news.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/strapi-news",
+      "handler": "strapi-news.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/strapi-news/:id",
+      "handler": "strapi-news.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/strapi-news/:id",
+      "handler": "strapi-news.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

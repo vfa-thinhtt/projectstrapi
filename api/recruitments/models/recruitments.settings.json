@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "recruitments",
   "info": {
-    "name": "recruitments"
+    "name": "recruitments",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,6 +13,47 @@
   "attributes": {
     "job_tittle": {
       "type": "string",
+      "required": true
+    },
+    "job_salary": {
+      "type": "string",
+      "required": true
+    },
+    "job_hightlight": {
+      "type": "richtext",
+      "required": true
+    },
+    "job_description": {
+      "type": "richtext",
+      "required": true
+    },
+    "job_required": {
+      "type": "richtext",
+      "required": true
+    },
+    "job_salary_reason": {
+      "type": "richtext",
+      "required": false
+    },
+    "job_yours_benefits": {
+      "type": "richtext"
+    },
+    "job_working_environments": {
+      "type": "richtext"
+    },
+    "job_highvalue_benefits": {
+      "type": "richtext"
+    },
+    "priority": {
+      "type": "integer",
+      "required": true
+    },
+    "post_in": {
+      "type": "string",
+      "required": true
+    },
+    "job_summary": {
+      "type": "richtext",
       "required": true
     }
   }

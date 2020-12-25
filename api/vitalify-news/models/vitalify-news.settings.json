@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "strapi_news",
+  "collectionName": "vitalify_news",
   "info": {
-    "name": "strapi_news",
+    "name": "vitalifyNews",
     "description": ""
   },
   "options": {
@@ -15,10 +15,6 @@
       "type": "string",
       "required": true
     },
-    "category": {
-      "type": "string",
-      "required": true
-    },
     "date": {
       "type": "string",
       "required": true
@@ -28,10 +24,14 @@
       "required": true
     },
     "contact": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
+    },
+    "category": {
+      "model": "categories"
     },
     "image": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",

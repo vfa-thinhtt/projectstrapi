@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/strapi-news",
-      "handler": "strapi-news.find",
+      "path": "/vitalify-news",
+      "handler": "vitalify-news.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/strapi-news/count",
-      "handler": "strapi-news.count",
+      "path": "/vitalify-news/count",
+      "handler": "vitalify-news.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/strapi-news/:id",
-      "handler": "strapi-news.findOne",
+      "path": "/vitalify-news/:id",
+      "handler": "vitalify-news.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/strapi-news",
-      "handler": "strapi-news.create",
+      "path": "/vitalify-news",
+      "handler": "vitalify-news.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/strapi-news/:id",
-      "handler": "strapi-news.update",
+      "path": "/vitalify-news/:id",
+      "handler": "vitalify-news.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/strapi-news/:id",
-      "handler": "strapi-news.delete",
+      "path": "/vitalify-news/:id",
+      "handler": "vitalify-news.delete",
       "config": {
         "policies": []
       }

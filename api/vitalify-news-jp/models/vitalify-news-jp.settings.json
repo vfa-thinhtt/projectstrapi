@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vitalify_news_jps",
+  "info": {
+    "name": "VitalifyNewsJP"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "contact": {
+      "type": "richtext"
+    },
+    "category": {
+      "model": "categories"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

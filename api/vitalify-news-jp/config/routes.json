@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vitalify-news-jps",
+      "handler": "vitalify-news-jp.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vitalify-news-jps/count",
+      "handler": "vitalify-news-jp.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vitalify-news-jps/:id",
+      "handler": "vitalify-news-jp.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vitalify-news-jps",
+      "handler": "vitalify-news-jp.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vitalify-news-jps/:id",
+      "handler": "vitalify-news-jp.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vitalify-news-jps/:id",
+      "handler": "vitalify-news-jp.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
